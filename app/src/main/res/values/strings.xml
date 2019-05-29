@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Haber 21</string>
+    <string name="admob_app_id">ca-app-pub-7130380770142159~3081395775</string>
+    <string name="admob_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
