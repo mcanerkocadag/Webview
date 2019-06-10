@@ -7,6 +7,33 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/right_menu_three_dot_color</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
 
+    <style name="SplashAppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorRed</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorSecondary">@color/right_menu_three_dot_color</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+    <declare-styleable name="ShadowLayout">
+        <attr format="dimension" name="slCornerRadius"/>
+        <attr format="dimension" name="slShadowSize"/>
+        <attr format="color" name="slShadowColor"/>
+        <attr format="dimension" name="slDx"/>
+        <attr format="dimension" name="slDy"/>
+    </declare-styleable>
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="AppTheme.CenterAnimation">
+        <item name="android:windowBackground">@drawable/logo</item>
+    </style>
 </resources>

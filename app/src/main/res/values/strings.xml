@@ -1,5 +1,51 @@
 <resources>
-    <string name="app_name">Haber 21</string>
+    <string name="app_name">mcaner webview</string>
     <string name="admob_app_id">ca-app-pub-7130380770142159~3081395775</string>
     <string name="admob_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_unit_ıd">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ana_sayfa">Anasayfa</string>
+    <string name="kategoriler">KAtegoriler</string>
+    <string name="ayarlar">Ayarlar</string>
+    <string name="runtime_permissions_txt">Sitemizden herhangi bir dosya indirecekseniz lütfen izin verin.</string>
+    <string name="loading_video">Video Yükleniyor...</string>
+    <string name="refresh">Refresh</string>
+    <string name="find">Find</string>
+    <string name="share_via">Share via</string>
+    <string name="copy_link">Copy Link</string>
+    <string name="open_with">Open with</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="yenile">Yenile</string>
+    <string name="linke_git">Siteye Git</string>
+    <string name="paylas">Paylaş</string>
+    <string name="kopyala">Kopyala</string>
+    <string name="search">Sitede Ara</string>
+    <string name="drawer_bize_ulasin">Bize Ulaşın</string>
+    <string name="drawer_iletim">İletişim</string>
+    <string name="drawer_hakkimizda">Hakkımızda</string>
+    <string name="splash_screen_text">Webview Çözümleri</string>
+    <string name="ara">Ara</string>
+    <string name="e_posta_gonder">E-Posta Gönder</string>
+
+
+    <!-- İLETİSİM -->
+    <string name="iletisim">İLETİŞİM</string>
+    <string name="iletisim_numara">05317766643</string>
+    <string name="iletisim_konu_baslik">Ankara Ofis</string>
+    <string name="iletisim_icerik">Ankara Ofis Mustafa Kemal Mah. Dumlupınar Bulv. No:280 (Yeni ODTÜ Teknokent Binası)
+        Kat:4 No:2 06530 Çankaya/Ankara
+    </string>
+    <string name="permissions_call_phone_txt">Uygulamamız üzerinden arama yapabilmek için lütfen izin veriniz.</string>
+    <!-- İLETİSİM SON -->
+
+    <!-- Hakkımızda -->
+    <string name="hakkinda_konu_baslik">Başlık</string>
+    <string name="hakkinda_icerik">Bir internet sitesinin en önemli sayfalarından biri, hiç şüphesiz hakkımızda
+        sayfasıdır. Çünkü hakkımızda yazısı, kullanıcıların site ve sitenin sahibi ile ilgili detaylara, bilgilere
+        ulaşmasını sağlar. Ayrıca hakkımızda bölümü size, şirketinizle kullanıcılar arasında bir bağ kurma ve sitenizi
+        ziyaret eden kişilere güven verme şansı tanır. Tüm bu nedenlerden dolayı, hakkımızda metni özenli ve titiz bir
+        şekilde hazırlanmalıdır. Peki, sitelerin hakkımızda sayfası nasıl yazılır? Bu yazımızda, hakkımızda sayfası veya
+        hakkımızda bölümü ile ilgili bilmeniz gereken tüm bilgileri detaylıca açıklamaya çalışacağız.
+    </string>
+    <string name="hakkinda">Hakkımızda</string>
+    <!-- Hakkımızda Son-->
 </resources>

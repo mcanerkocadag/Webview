@@ -3,5 +3,35 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorRed">#e53935</color>
+    <color name="colorRed">#ef5350</color>
+    <color name="finestWhite10">#1AFFFFFF</color>
+    <color name="finestWhite20">#33FFFFFF</color>
+    <color name="finestWhite30">#4DFFFFFF</color>
+
+    <color name="finestGray10">#1AD2D2D2</color>
+    <color name="finestGray20">#33D2D2D2</color>
+
+    <color name="finestBlack05">#0D202020</color>
+    <color name="finestBlack10">#1A202020</color>
+    <color name="finestBlack20">#33202020</color>
+    <color name="finestBlack30">#4D202020</color>
+    <color name="finestBlack40">#66202020</color>
+
+    <color name="finestWhite">#FFFFFF</color>
+    <color name="finestBlack">#000000</color>
+    <color name="finestSilver">#A5A5A5</color>
+    <color name="finestGray">#E7E7E7</color>
+
+    <!-- TEMA RENK SEÇİMLERİ -->
+    <color name="search_icon_color">#ffef5350</color>
+    <color name="toolbar_color">#ef5350</color>
+    <color name="toolbar_title_text_color">#ffffff</color>
+    <color name="right_menu_three_dot_color">#ffffff</color>
+    <color name="drawer_color">#ffffff</color>
+    <color name="drawer_header_background_color">#ffffff</color>
+    <color name="drawer_container_color">#ef5350</color>
+    <color name="drawer_header_divider_color">#afafaf</color>
+    <color name="drawer_menu_item_text_color">#ffffff</color>
+    <color name="app_background">#eeeeee</color>
+    <color name="splash_background">#A9A9A9</color>
 </resources>

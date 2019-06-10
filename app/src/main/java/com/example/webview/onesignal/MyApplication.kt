@@ -1,26 +1,49 @@
-package com.example.webview
+package com.example.webview.onesignal
 
 import android.app.Application
 import com.onesignal.OneSignal
 import android.content.Intent
-import android.R.attr.action
 import com.onesignal.OSNotificationAction
-import org.json.JSONObject
 import com.onesignal.OSNotificationOpenResult
-import android.R.attr.smallIcon
 import android.util.Log
+import com.example.webview.AcilacakSayfa
+import com.example.webview.model.GlobalParameter
+import com.example.webview.model.MenuSetting
+import com.example.webview.model.Settings
+import com.example.webview.webview.ExampleActivity
 import com.onesignal.OSNotification
 
 
 class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
+
+        initSettings()
+
         OneSignal.startInit(this)
             .setNotificationReceivedHandler(ExampleNotificationReceivedHandler())
             .setNotificationOpenedHandler(ExampleNotificationOpenedHandler())
             .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
             .unsubscribeWhenNotificationsAreDisabled(true)
             .init()
+    }
+
+    private fun initSettings() {
+        var settings = Settings()
+        settings.isDownloadFeature = true
+        settings.isUploadFeature = true
+        settings.isVideoFullScreen = true
+        settings.showAdmob = false
+        settings.showInterstitialAdmob = false
+        settings.showToolbar = true
+        settings.showSplashScreen = true
+        settings.showDrawerMenu = true
+        settings.menuSettings.add(MenuSetting("Google", "https://www.google.com/"))
+        settings.menuSettings.add(MenuSetting("Youtube", "https://www.youtube.com/"))
+        settings.menuSettings.add(MenuSetting("Yandex", "https://yandex.com.tr/"))
+        settings.menuSettings.add(MenuSetting("Yahoo", "https://www.yahoo.com/"))
+
+        GlobalParameter.settings = settings
     }
 
     private inner class ExampleNotificationReceivedHandler : OneSignal.NotificationReceivedHandler {
@@ -81,7 +104,7 @@ class MyApplication : Application() {
 
                 if (result.action.actionID == "id1") {
                     Log.i("OneSignalExample", "button id called: " + result.action.actionID)
-                    activityToLaunch = MainActivity::class.java
+                    activityToLaunch = ExampleActivity::class.java
                 } else
                     Log.i("OneSignalExample", "button id called: " + result.action.actionID)
             }

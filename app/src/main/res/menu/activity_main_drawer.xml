@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_1"
+                android:icon="@drawable/page"
+                android:title="Anasayfa"
+                app:showAsAction="always" />
+        <item
+                android:id="@+id/nav_2"
+                android:icon="@drawable/page"
+                android:title="Mobil"
+                app:showAsAction="always" />
+        <item
+                android:id="@+id/nav_3"
+                android:icon="@drawable/page"
+                android:title="Nasıl Yapılır"
+                app:showAsAction="always" />
+        <item
+                android:id="@+id/nav_4"
+                android:icon="@drawable/page"
+                android:title="Oyun"
+                app:showAsAction="always" />
+        <item
+                android:id="@+id/nav_5"
+                android:icon="@drawable/page"
+                android:title="Eğitim"
+                app:showAsAction="always" />
+        <item
+                android:id="@+id/nav_6"
+                android:icon="@drawable/page"
+                android:title="Sosyal Medya"
+                app:showAsAction="always" />
+        <item
+                android:id="@+id/nav_7"
+                android:icon="@drawable/page"
+                android:title="Sosyal Medya"
+                app:showAsAction="always" />
+        <item
+                android:id="@+id/nav_8"
+                android:icon="@drawable/page"
+                android:title="Sosyal Medya"
+                app:showAsAction="always" />
+        <item
+                android:id="@+id/nav_9"
+                android:icon="@drawable/page"
+                android:title="Sosyal Medya"
+                app:showAsAction="always" />
+        <item
+                android:id="@+id/nav_10"
+                android:icon="@drawable/page"
+                android:title="Sosyal Medya"
+                app:showAsAction="always" />
+    </group>
+
+    <item android:id="@+id/contact_container" android:title="@string/drawer_bize_ulasin">
+        <menu>
+            <item
+                    android:id="@+id/nav_iletisim"
+                    android:icon="@drawable/iletisim"
+                    android:title="@string/drawer_iletim"
+                    app:showAsAction="always" />
+            <item
+                    android:id="@+id/nav_hakkimizda"
+                    android:icon="@drawable/info"
+                    android:title="@string/drawer_hakkimizda"
+                    app:showAsAction="always" />
+        </menu>
+    </item>
+
+</menu>

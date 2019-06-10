@@ -1,22 +1,17 @@
-package com.example.webview
+package com.example.webview.onesignal
 
-import android.app.Service
 import android.content.Intent
-import android.os.IBinder
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import android.media.RingtoneManager
-import android.media.Ringtone
 import android.content.ContentResolver
-import android.content.Context.NOTIFICATION_SERVICE
-import android.support.v4.content.ContextCompat.getSystemService
 import android.app.NotificationManager
 import android.R
 import android.app.PendingIntent
 import android.content.Context
 import android.net.Uri
-import android.support.v4.app.NotificationCompat
-import android.util.Log
+import androidx.core.app.NotificationCompat
+import com.example.webview.MainActivity
 
 
 class MyFirebaseMessagingService : FirebaseMessagingService() {

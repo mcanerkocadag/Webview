@@ -1,39 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.example.webview">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.webview">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
-            android:name=".MyApplication"
+            android:name=".onesignal.MyApplication"
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@drawable/logo"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".HakkindaActivity"
+        android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".İletisimActivity"
+                  android:screenOrientation="portrait">
+        </activity>
 
         <meta-data
                 android:name="com.google.android.gms.ads.APPLICATION_ID"
-                android:value="@string/admob_app_id"/>
-        <!-- Disable opening of launcher Activity -->
-        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE"/>
+                android:value="@string/admob_app_id"/> <!-- Disable opening of launcher Activity -->
+        <meta-data
+                android:name="com.onesignal.NotificationOpened.DEFAULT"
+                android:value="DISABLE"/>
+
         <activity android:name=".AcilacakSayfa">
         </activity>
 
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name=".onesignal.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-        <service android:name=".MyFirebaseInstanceIDService">
+        <service android:name=".onesignal.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
 
-        <activity android:name=".MainActivity"
-        android:screenOrientation="portrait">
+        <activity
+                android:name=".webview.ExampleActivity"
+                android:configChanges="orientation|screenSize"
+                android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
