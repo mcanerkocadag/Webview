@@ -130,7 +130,7 @@ class ExampleActivity : RuntimePermissionsActivity() {
         // Video full ekran yapma ayarı
         if (GlobalParameter.settings.isVideoFullScreen) {
 
-            webView.webChromeClient = webChromeClient!!
+            webChromeClient?.let { webView.setWebChromeClient(it) }
             // Call private class InsideWebViewClient
             webView.webViewClient = InsideWebViewClient()
         }

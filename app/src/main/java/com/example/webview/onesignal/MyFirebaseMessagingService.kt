@@ -18,11 +18,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     private val TAG = "MyFirebaseMsgService"
 
-    override fun onMessageReceived(remoteMessage: RemoteMessage?) {
-
-
-    }
-
     private fun sendNotification(messageTitle: String?, messageBody: String?) {
 
         val intent = Intent(this, MainActivity::class.java)

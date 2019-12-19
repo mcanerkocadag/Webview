@@ -1,11 +1,13 @@
 package com.example.webview.onesignal
 
 import android.app.Application
+import android.content.Context
 import com.onesignal.OneSignal
 import android.content.Intent
 import com.onesignal.OSNotificationAction
 import com.onesignal.OSNotificationOpenResult
 import android.util.Log
+import androidx.multidex.MultiDex
 import com.example.webview.AcilacakSayfa
 import com.example.webview.model.GlobalParameter
 import com.example.webview.model.MenuSetting
@@ -26,6 +28,11 @@ class MyApplication : Application() {
             .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
             .unsubscribeWhenNotificationsAreDisabled(true)
             .init()
+    }
+
+    override fun attachBaseContext(base: Context?) {
+        super.attachBaseContext(base)
+        MultiDex.install(this)
     }
 
     private fun initSettings() {
